@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif  ;
+}
+
+body{
+    background-color: rgb(199, 121, 238);
+    padding: 20px;
+}
+
+main{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100px 500px 100px;
+    grid-gap: 10px;
+}
+
+header, nav, article, footer{
+    padding: 20px;
+    font-size: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header{
+    background-color: rgb(177, 0, 184);
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+nav{
+    background-color: rgb(185, 45, 224);
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+article{
+    background-color: rgb(159, 12, 199);
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+footer{
+    background-color: rgb(136, 9, 171);
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
